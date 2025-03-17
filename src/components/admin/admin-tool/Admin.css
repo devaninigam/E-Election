@@ -1,0 +1,387 @@
+/* //scroll */
+
+/* Webkit-based browsers (Chrome, Safari) */
+/* You can customize the styles as per your design */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1A257E;
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+/* scroll    */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container-p {
+  padding: 100px 100px 100px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  min-height: 100%;
+}
+
+.partyadd {
+  width: 100% !important;
+  margin: 0px 20px 0px;
+  padding: 10px 60px 0px 10px;
+}
+
+.form-label {
+  font-size: 20px;
+}
+
+a,
+Link {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  background: #F0F3F7;
+}
+
+.d-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 467px;
+  height: 52px;
+  flex-shrink: 0;
+  font-size: 22px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  margin: 6px 0;
+  padding: 0 15px;
+}
+
+.input-leble {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 6px 0;
+}
+
+.costume-btn {
+  width: 467px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 299px;
+  background-color: #1A257E;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 61px 0 0;
+  transition: all 0.5s;
+}
+
+.costume-btn:hover,
+.smoll-btn:hover {
+  background-color: transparent !important;
+  color: #000000 !important;
+}
+
+.smoll-btn {
+  cursor: pointer;
+  /* min-width: 148px; */
+  padding: 12px 24px;
+  /* height: 48px; */
+  border-radius: 14px;
+  background-color: #1A257E;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.5s;
+}
+
+.smoll-btn.delete {
+  background-color: #b20303;
+}
+
+.container-x {
+  display: flex;
+  width: 100vw;
+  padding: 0 240px;
+}
+
+/* ===.----.login.----.=== */
+
+.login-first {
+  background: #1A257E;
+  width: 50%;
+  height: 100vh;
+}
+
+.login-second {
+  width: 50%;
+  height: 100vh;
+}
+
+.login-first .login-logo {
+  width: 180px;
+}
+
+.login-second .login-form .login-text {
+  color: #0A0909;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 56px;
+}
+
+/* =====--Side Bar Nav====== */
+.side-bar {
+  position: fixed;
+  top: 80px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  overflow-x: hidden;
+  height: 100%;
+  width: 25%;
+}
+
+.side-nav {
+  display: flex;
+  /* align-items: end; */
+  flex-direction: column;
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 0 20px;
+}
+
+.side-nav .side-ul {
+  margin: 20px 0 0 0;
+}
+
+.side-nav .side-ul .nav-Link {
+  color: rgba(0, 0, 0, 0.50);
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  /* padding: 5px; */
+}
+
+.set-side-bar-h {
+  height: 100%;
+}
+
+.nav-item-sidebar {
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+}
+
+.nav-bar-bg {
+  height: 100px;
+  background: #1A257E !important;
+}
+
+.nav-text-link {
+
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.8px;
+}
+
+.navbar-logo {
+  height: 65px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.table {
+  text-align: center;
+}
+
+.thead {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.p-color {
+  background-color: #1A257E;
+  color: #FFF;
+}
+
+.tdata {
+  padding: 5px 0;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: auto 0;
+  margin: 20px 0 !important;
+}
+
+.tdata.top-pading {
+  padding: 22px 0;
+}
+
+/* ///////mode ---------- */
+.model-scal {
+  transform: scale(1.4) !important;
+}
+
+.form-control {
+  font-size: 14px !important;
+}
+
+.partylogo {
+  width: 50px;
+}
+
+.partylogo-1 {
+  padding: 4px !important;
+}
+
+.lshadow {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: relative;
+}
+
+.box-sh {
+  padding: 10px 30px 0px 30px;
+  margin: 0px 30px;
+  box-shadow: 0px 1px 24px -4px;
+  border-radius: 23px;
+  height: 200px;
+  background-color: #fff;
+}
+
+.vote-text-set {
+  color: rgba(0, 0, 0, .45);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.vote-count-set {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.calling {
+  margin: 40px 50px 0px 0px;
+}
+
+.form-label {
+  font-size: 14px !important;
+}
+
+.form-select-lg {
+  font-size: 15px;
+}
+
+.error-text {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: red;
+}
+
+.nav-item-sidebar {
+  display: block;
+  line-height: 35px;
+  padding: 0 10px;
+}
+
+.nav-item-sidebar .nav-Link {
+  padding: 0 10px;
+
+}
+
+.active {
+  background-color: #1a267e3e;
+  display: block;
+  /* padding: 5px; */
+  padding: 0 10px;
+  line-height: 35px;
+}
+
+.login-text-send {
+  font-size: 16px;
+  display: flex;
+  justify-content: end;
+  color: blue;
+  margin-top: 5px;
+}
+
+.logout {
+  margin-left: 70px;
+  background-color: #ffffff;
+  padding: 5px 30px;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.last-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 29%;
+}
+
+.connnect {
+  margin-top: -10px;
+  margin-left: 19px;
+}
+
+.container-p {
+  max-height: 60vh;
+  overflow: auto;
+}

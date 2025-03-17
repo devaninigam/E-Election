@@ -1,0 +1,72 @@
+@media(max-width:568px) {
+    .vt .pd {
+        padding: 4vw 1vw;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .vt .party-logo {
+        margin: 4vw 0;
+    }
+}
+
+@media(max-width:500px) {
+    .user-login .l-1 {
+        display: none;
+    }
+
+    .user-login .e-form {
+        width: 100%;
+        padding: 15vw;
+    }
+
+    .user-login .e-form .form {
+        padding: 9vw;
+    }
+
+    .user-login .e-form .form p {
+        font-size: 25px;
+    }
+
+    .user-login .e-form .form label {
+        font-size: 15px;
+    }
+
+    .user-login .e-form .form input::placeholder {
+        font-size: 12px;
+    }
+
+    .user-login .form button {
+        margin-top: 2vw;
+        font-size: 15px;
+        padding: 1vw;
+    }
+
+    .vt .pd,
+    th {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:400px) {
+    .vt table {
+        margin-top: 30vw;
+    }
+
+    .user-login .e-form .form p {
+        font-size: 22px;
+    }
+
+    .user-login .e-form .form label {
+        font-size: 14px;
+    }
+
+    .user-login .e-form .form input::placeholder {
+        font-size: 10px;
+    }
+
+    .user-login .e-form button {
+        font-size: 12px;
+        padding: 1vw;
+    }
+}

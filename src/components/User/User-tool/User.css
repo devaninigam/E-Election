@@ -1,0 +1,143 @@
+/* =====Navbar===== */
+nav {
+    background: #1A257E;
+}
+
+nav .user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -0.1vw 0;
+}
+
+.user-nav .dropdown li p {
+    margin: 0 0 10px;
+}
+
+.user-nav .dropdown .dropdown-menu {
+    width: 300px;
+}
+
+/*===== UserLogin===== */
+.e-logo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1A257E;
+}
+
+.e-form {
+    background: #fff;
+}
+
+.form {
+    border: 1px solid #000;
+    border-radius: 28px;
+    padding: 3vw 3vw 4vw;
+    width: 400px;
+}
+
+.form p {
+    font-size: 28px;
+    margin-bottom: 0.5vw;
+    font-weight: 700;
+}
+
+.form .formlogo img {
+    width: 35%;
+}
+
+.form label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0.5vw;
+}
+
+.form .form-control {
+    margin-bottom: 0.9vw;
+    padding: 0.5vw;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.form .form-control:focus {
+    box-shadow: none;
+}
+
+.form input::placeholder {
+    font-size: 14px;
+}
+
+.form button {
+    border: 0;
+    background: #1A257E;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.5vw;
+    border-radius: 8px;
+    margin-top: 0.9vw;
+}
+
+/* ===== table ===== */
+.vt {
+    width: 100%;
+    height: 100vh;
+    margin-top: 10vw;
+}
+
+.vt table {
+    margin: 0 auto;
+}
+
+.vt .pd {
+    padding: 2vw 0;
+}
+
+.vt button {
+    display: block;
+    border: 0;
+    width: 100px;
+    background: #1A257E;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    padding: 0.5vw;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 1vw;
+}
+
+/* =====profile-card===== */
+.profile-card {
+    height: 100vh;
+}
+
+.profile-card .card {
+    width: 500px;
+}
+
+.profile-card img {
+    width: 90px;
+}
+
+.profile-card button {
+    background-color: #1A257E;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.profile-card h6 {
+    text-align: left;
+}
+
+.profile-card span {
+    font-size: 15px;
+}
