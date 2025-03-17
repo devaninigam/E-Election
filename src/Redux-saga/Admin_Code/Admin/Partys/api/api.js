@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BASE_URL, PARTY_CREATE_API, PARTY_LIST_API } from "../../../../constant";
+import { BASE_URL, PARTY_CREATE_API, PARTY_DELETE_API, PARTY_LIST_API } from "../../../../constant";
 
 // ELECTION GET API IS IN FUNCTION
 export function GetPartyAxios() {
@@ -34,10 +34,9 @@ export function PostPartyAxios(action) {
 
 // ELECTION DELETE API IS IN FUNCTION
 export function DeletePartyAxios(action) {
-  return axios.delete(BASE_URL + PARTY_CREATE_API, action.payload)
+  return axios.delete(`${BASE_URL + PARTY_DELETE_API}/${action.payload}`)
     .then((res) => {
-      const data = res.data.data;
-      console.log("api calling", data);
+      const data = action.payload;
       const status = res.status;
       return {
         data,
@@ -46,6 +45,6 @@ export function DeletePartyAxios(action) {
     })
     .catch((error) => {
       console.log("Error in API call", error);
-      throw error; // Rethrow the error to be caught by the calling code
+      throw error;
     });
 }

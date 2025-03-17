@@ -10,6 +10,7 @@ export const ELECTION_DELETE_API = "/election/delete"
 
 export const PARTY_LIST_API = "/party/list"
 export const PARTY_CREATE_API = "/party/create_party"
+export const PARTY_DELETE_API = "/party/delete"
 
 // PARTYCONNECT ROUTER LINK
 

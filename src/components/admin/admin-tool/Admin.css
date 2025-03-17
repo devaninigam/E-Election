@@ -276,7 +276,7 @@ body {
 
 .lshadow {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
-  height: 100vh;
+  height: calc(100vh - 81px);
   overflow: hidden;
   padding-top: 100px;
   position: fixed;
@@ -284,6 +284,9 @@ body {
   bottom: 0;
   right: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .box-sh {
@@ -371,9 +374,10 @@ body {
 }
 
 .last-btn {
-  position: absolute;
-  bottom: 10px;
-  right: 29%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .connnect {
@@ -381,7 +385,7 @@ body {
   margin-left: 19px;
 }
 
-.container-p {
+.container-p.set-scroll {
   max-height: 60vh;
   overflow: auto;
 }

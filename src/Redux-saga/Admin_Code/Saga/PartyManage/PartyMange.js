@@ -40,6 +40,7 @@ export function* DeletePartyManage(action) {
   try {
     const res = yield call(DeletePartyAxios, action);
     const data = res.data;
+    console.log('data: ', res);
     const status = res.status;
     if (status === 200 || status === 201) {
       yield put({ type: DELETE_PARTY_SUCCESS, data })

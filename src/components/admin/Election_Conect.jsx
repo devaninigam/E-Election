@@ -116,7 +116,7 @@ function Election_Conect() {
         <Navbar />
         <SideNavbar />
         <div className="col-6">
-          <div className="container-p">
+          <div className="container-p set-scroll">
             <center className="connnect">
               <table style={{ transform: "scale(0.9)" }} className="table">
                 <thead>

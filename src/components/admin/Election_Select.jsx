@@ -122,7 +122,7 @@ function Election_Select() {
           <Navbar />
           <SideNavbar />
           <div className='col-9'>
-            <div className='container-p'>
+            <div className='container-p set-scroll'>
               <table className='table'>
                 <tr>
                   <th className='thead border border-1 border-dark' scope='col'>

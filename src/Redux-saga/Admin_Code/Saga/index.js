@@ -2,6 +2,7 @@ import { all } from "redux-saga/effects";
 import {
   DeleteElectionRootSaga,
   DeletePartyConnectDeleteRootSaga,
+  DeletePartyRootSaga,
   GetElectionRootSaga,
   GetPartyConnectRootSaga,
   GetPartyRootSaga,
@@ -21,6 +22,7 @@ export function* SagaIndex() {
     // PARTY ROOTSAGA IN SAGAINDEX
     GetPartyRootSaga(),
     PostPartyRootSaga(),
+    DeletePartyRootSaga(),
     // PARTYCONNECT ROOTSAGA IN SAGAINDEX 
     GetPartyConnectRootSaga(),
     PostPartyConnectRootSaga(),
