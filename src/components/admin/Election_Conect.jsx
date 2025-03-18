@@ -130,9 +130,9 @@ function Election_Conect() {
                 <tbody>
                   {api?.map((item, index) => (
                     <tr className="p-2" key={index}>
-                      <th className="tdata">{index + 1}</th>
-                      <td className="tdata">{item.election?.election_name}</td>
-                      <td className="tdata">{item.party?.party_name}</td>
+                      <th className="tdata top-pading">{index + 1}</th>
+                      <td className="tdata top-pading">{item.election?.election_name}</td>
+                      <td className="tdata top-pading">{item.party?.party_name}</td>
                       <td className="tdata">
                         <button className="smoll-btn delete" onClick={() => partyDelete(item._id)}>
                           Delete

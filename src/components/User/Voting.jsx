@@ -125,13 +125,14 @@ const Voting = () => {
                                     </tr>
                                 </thead>
                                 <tbody className='table-bordered'>
+                                    {console.log('PartyConnectData: 00', PartyConnectData)}
                                     {PartyConnectData.map((v, i) =>
                                         <tr key={i}>
                                             <td className='pd'>{i + 1}</td>
                                             <td className='pd'>{v.party?.party_name}</td>
                                             <td className='w-25'>
                                                 <div className='party-logo'>
-                                                    <img src={'img'} alt={v.party?.party_name} className='w-50' />
+                                                    <img src={v.party?.party_logo} alt={v.party?.party_name} className='w-50' />
                                                 </div>
                                             </td>
                                             <td className='pd'>

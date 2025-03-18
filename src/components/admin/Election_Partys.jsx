@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Navbar from './Navbar';
 import SideNavbar from './SideNavbar';
 import { useDispatch, useSelector } from 'react-redux';
@@ -8,6 +8,7 @@ import Swal from 'sweetalert2';
 function ElectionParties() {
   const [formData, setFormData] = useState({ party_name: '', party_logo: null, short_code: '' });
   const [validation, setValidation] = useState({});
+  const fileInputRef = useRef(null); // Ref for file input
 
   const dispatch = useDispatch();
   const parties = useSelector(state => state.PartyReducer.PartyData);
@@ -52,6 +53,12 @@ function ElectionParties() {
       document.getElementById("exampleModal").classList.remove("show");
       document.body.classList.remove("modal-open");
       document.querySelector(".modal-backdrop").remove();
+
+      setFormData({ party_name: '', party_logo: null, short_code: '' });
+
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ""; // Reset file input
+      }
     });
   };
 
@@ -121,17 +128,17 @@ function ElectionParties() {
               <div className="modal-body">
                 <label>Party Name</label>
                 <div className="input-group mb-3 mt-2">
-                  <input type="text" name="party_name" className={`form-control ${validation.party_name ? 'is-invalid' : ''}`} placeholder="Party Name" onChange={handleChange} />
+                  <input type="text" name="party_name" value={formData.party_name} className={`form-control ${validation.party_name ? 'is-invalid' : ''}`} placeholder="Party Name" onChange={handleChange} />
                   {validation.party_name && <div className="invalid-feedback">{validation.party_name}</div>}
                 </div>
                 <label>Party Logo</label>
                 <div className="input-group mb-3 mt-2">
-                  <input type="file" name="party_logo" accept=".png" className={`form-control ${validation.party_logo ? 'is-invalid' : ''}`} onChange={handleChange} />
+                  <input type="file" ref={fileInputRef} name="party_logo" accept=".png" className={`form-control ${validation.party_logo ? 'is-invalid' : ''}`} onChange={handleChange} />
                   {validation.party_logo && <div className="invalid-feedback">{validation.party_logo}</div>}
                 </div>
                 <label>Short Code</label>
                 <div className="input-group mb-3 mt-2">
-                  <input type="text" name="short_code" className={`form-control ${validation.short_code ? 'is-invalid' : ''}`} placeholder="Short Code" onChange={handleChange} />
+                  <input type="text" name="short_code" value={formData.short_code} className={`form-control ${validation.short_code ? 'is-invalid' : ''}`} placeholder="Short Code" onChange={handleChange} />
                   {validation.short_code && <div className="invalid-feedback">{validation.short_code}</div>}
                 </div>
               </div>
