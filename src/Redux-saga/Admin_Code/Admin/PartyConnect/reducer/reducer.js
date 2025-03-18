@@ -16,7 +16,6 @@ const initialState = {
 };
 
 function PartyConnectReducer(state = initialState, action) {
-  console.log('action: 19', action);
   switch (action.type) {
 
     // PARTYCONNECT GET DATA ACTION --- GET

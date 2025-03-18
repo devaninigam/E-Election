@@ -1,5 +1,6 @@
 import axios from "axios";
 import { BASE_URL, PARTY_CREATE_API, PARTY_DELETE_API, PARTY_LIST_API } from "../../../../constant";
+import Swal from "sweetalert2";
 
 // ELECTION GET API IS IN FUNCTION
 export function GetPartyAxios() {
@@ -19,7 +20,6 @@ export function PostPartyAxios(action) {
   return axios.post(BASE_URL + PARTY_CREATE_API, action.payload)
     .then((res) => {
       const data = res.data.data;
-      console.log("api calling", data);
       const status = res.status;
       return {
         data,
@@ -27,9 +27,13 @@ export function PostPartyAxios(action) {
       };
     })
     .catch((error) => {
-      console.log("Error in API call", error);
-      throw error; // Rethrow the error to be caught by the calling code
-    });
+      Swal.fire({
+        title: "Error!",
+        text: error?.response?.data?.errors[0] || "Failed to fetch elections. Please try again later.",
+        icon: "error",
+      });
+      throw error;
+    })
 }
 
 // ELECTION DELETE API IS IN FUNCTION
