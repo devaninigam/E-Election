@@ -8,8 +8,6 @@ export async function GetElectionAxios() {
     const response = await axios.get(BASE_URL + ELECTION_LIST_API);
     return { data: response.data.data, status: response.status };
   } catch (error) {
-    console.error("Error fetching elections:", error);
-
     Swal.fire({
       title: "Error!",
       text: "Failed to fetch elections. Please try again later.",
@@ -29,7 +27,7 @@ export async function PostElectionAxios(action) {
 
     Swal.fire({
       title: "Error!",
-      text: error.response?.data?.message || "Failed to create election. Please check your input and try again.",
+      text: error.response?.data?.errors[0] || "Failed to create election. Please check your input and try again.",
       icon: "error",
     });
 
@@ -45,7 +43,7 @@ export async function DeleteElectionAxios(action) {
   } catch (error) {
     Swal.fire({
       title: "Error!",
-      text: error.response?.data?.message || "Failed to create election. Please check your input and try again.",
+      text: error.response?.data?.errors[0] || "Failed to create election. Please check your input and try again.",
       icon: "error",
     });
     throw error; // Pass the error to be handled in the calling function

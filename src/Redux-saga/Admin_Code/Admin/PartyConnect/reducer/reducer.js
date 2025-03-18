@@ -15,7 +15,8 @@ const initialState = {
   DataIsLoaded: false
 };
 
-function PartyConnectReducer(state = initialState, action) { 
+function PartyConnectReducer(state = initialState, action) {
+  console.log('action: 19', action);
   switch (action.type) {
 
     // PARTYCONNECT GET DATA ACTION --- GET
@@ -40,23 +41,23 @@ function PartyConnectReducer(state = initialState, action) {
 
     // PARTYCONNECT POST DATA ACTION --- POST
 
-    // case POST_PARTYCONNECT_PROGRESS:
-    //   return {
-    //     ...state,
-    //     PostPartyConnectProgress: true,
-    //   };
-    // case POST_PARTYCONNECT_ERROR:
-    //   return {
-    //     ...state,
-    //     PostPartyConnectError: action.data,
-    //   }; 
-    // case POST_PARTYCONNECT_SUCCESS:
-    //   return {
-    //     ...state,
-    //     DataIsLoaded: true,
-    //     PartyConnectData: state.PartyConnectData.concat(action.payload),
-    //     PostPartyConnectProgress: false,
-    //   };
+    case POST_PARTYCONNECT_PROGRESS:
+      return {
+        ...state,
+        PostPartyConnectProgress: true,
+      };
+    case POST_PARTYCONNECT_ERROR:
+      return {
+        ...state,
+        PostPartyConnectError: action.data,
+      };
+    case POST_PARTYCONNECT_SUCCESS:
+      return {
+        ...state,
+        DataIsLoaded: true,
+        PartyConnectData: state.PartyConnectData.concat(action.data),
+        PostPartyConnectProgress: false,
+      };
 
     // SET DEFAULT
     default:

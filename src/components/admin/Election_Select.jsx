@@ -88,6 +88,14 @@ function Election_Select() {
     const modal = document.getElementById('exampleModal');
     const modalInstance = bootstrap.Modal.getInstance(modal);
     modalInstance.hide();
+    setValidation({
+      Eelection_name: '',
+      Edate: '',
+    })
+    setElectionData({
+      election_name: '',
+      date: '',
+    })
   };
 
   const electionDelete = (id) => {
@@ -180,6 +188,7 @@ function Election_Select() {
                         aria-label='Username'
                         aria-describedby='basic-addon1'
                         name='election_name'
+                        value={electionData.election_name}
                         onChange={(e) => inputHandle(e)}
                       />
                       {validation.Eelection_name && <div className='invalid-feedback'>{validation.Eelection_name}</div>}
@@ -193,6 +202,7 @@ function Election_Select() {
                         aria-label='Username'
                         aria-describedby='basic-addon1'
                         name='date'
+                        value={electionData.date}
                         onChange={(e) => inputHandle(e)}
                       />
                       {validation.Edate && <div className='invalid-feedback'>{validation.Edate}</div>}
