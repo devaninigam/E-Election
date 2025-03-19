@@ -4,7 +4,7 @@ import SideNavbar from './SideNavbar'
 import axios from 'axios'
 import { BASE_URL, GET_USER_LIST } from '../../Redux-saga/constant'
 import { useDispatch, useSelector } from 'react-redux'
-import { GET_PARTY_PROGRESS } from '../../Redux-Saga/Admin_Code/Admin/Partys/action/action'
+import { GET_PARTY_PROGRESS } from '../../Redux-saga/Admin_Code/Admin/Partys/action/action'
 import { GET_TOTALCOUNT_PROGRESS } from '../../Redux-saga/Admin_Code/Admin/TotalCount/action/action'
 
 function Election_Vote() {

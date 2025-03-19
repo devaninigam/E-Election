@@ -7,8 +7,8 @@ import {
   GET_PARTYCONNECT_PROGRESS,
   POST_PARTYCONNECT_PROGRESS,
 } from "../../Redux-saga/Admin_Code/Admin/PartyConnect/action/action";
-import { GET_ELECTION_PROGRESS } from "../../Redux-Saga/Admin_Code/Admin/Election/action/action";
-import { GET_PARTY_PROGRESS } from "../../Redux-Saga/Admin_Code/Admin/Partys/action/action";
+import { GET_ELECTION_PROGRESS } from "../../Redux-saga/Admin_Code/Admin/Election/action/action";
+import { GET_PARTY_PROGRESS } from "../../Redux-saga/Admin_Code/Admin/Partys/action/action";
 import Swal from "sweetalert2";
 
 function Election_Conect() {

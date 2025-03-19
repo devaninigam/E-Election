@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import SideNavbar from './SideNavbar';
 import { useDispatch, useSelector } from 'react-redux';
-import { DELETE_ELECTION_PROGRESS, GET_ELECTION_PROGRESS, POST_ELECTION_PROGRESS } from '../../Redux-Saga/Admin_Code/Admin/Election/action/action';
+import { DELETE_ELECTION_PROGRESS, GET_ELECTION_PROGRESS, POST_ELECTION_PROGRESS } from '../../Redux-saga/Admin_Code/Admin/Election/action/action';
 import Swal from 'sweetalert2';
 
 function Election_Select() {

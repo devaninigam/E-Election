@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import Navbar from './Navbar';
 import SideNavbar from './SideNavbar';
 import { useDispatch, useSelector } from 'react-redux';
-import { DELETE_PARTY_PROGRESS, GET_PARTY_PROGRESS, POST_PARTY_PROGRESS } from '../../Redux-Saga/Admin_Code/Admin/Partys/action/action';
+import { DELETE_PARTY_PROGRESS, GET_PARTY_PROGRESS, POST_PARTY_PROGRESS } from '../../Redux-saga/Admin_Code/Admin/Partys/action/action';
 import Swal from 'sweetalert2';
 
 function ElectionParties() {
